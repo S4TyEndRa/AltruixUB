@@ -26,7 +26,7 @@ async def download_files_from_telegram(c, m: Message):
     user_args = m.user_args
     start_time = time.time()
     downloads_path = (
-        "./custom_files/thumb.jpg" if "-sethumb" in user_args else "./downloads/"+str(input_)
+        "./custom_files/thumb.jpg" if "-sethumb" in user_args else "./downloads/"
     )
     if not os.path.exists(downloads_path):
             os.mkdir(downloads_path)
@@ -44,7 +44,7 @@ async def download_files_from_telegram(c, m: Message):
     msg_id = m.reply_to_message.id if m.reply_to_message else m.id
     thumb = "./custom_files/thumb.jpg"
     thumb = thumb if os.path.exists(thumb) else None
-    if not os.path.exists(input_):
+    if not os.path.exists(file_):
         return await msg.edit_msg("404_FILE_NOT_FOUND")
     await c.send_file(
         m.chat.id,
