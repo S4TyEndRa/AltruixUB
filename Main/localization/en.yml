@@ -114,6 +114,7 @@ PROPER_INPUT_REQ: "<i>Give me an proper input, you may check help menu for more 
 PURGED: "<b><u>Purged</b></u> \n\n<b>Purged in :</b> <code>{}ms</code> \n<b>No of Message purged :</b> <code>{}</code>"
 REPLY_PASTE_NOT_SUPPORTED: "<i>Your replied message doesn't support pasting.</i>"
 REPLY_PHOTO: "<code>Reply to a photo!</code>"
+RENAME_ERROR: "Provide a name for the file with extention followed by command with space"
 REPLY_REQUIRED: "<code>You need to reply to message for this module to work!</code>"
 REPLY_TO_MESSAGE: "<code>Please reply to a message.</code>"
 S_FLAG_WITHOUT_LOG_CHAT: "You can't use the -s flag since <code>LOG_CHAT_ID</code> is not set."
